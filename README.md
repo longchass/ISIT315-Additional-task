@@ -1,6 +1,6 @@
 # ISIT315-Additional-task
 Long Le 6482132 
-how to run
+how to run /n
 clone 
 
 cd apache-jena-fuseki-3.16.0
