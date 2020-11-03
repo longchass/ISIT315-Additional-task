@@ -1,0 +1,1249 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#"
+     xml:base="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Automated_processing_with_significant_effects_on_data_subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Automated_processing_with_significant_effects_on_data_subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_data_being_processed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_data_being_processed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_Minimization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_recipients_data_is_shared_with -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_recipients_data_is_shared_with">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Integrity_and_Confidentiality"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_no_longer_needed_for_original_purpose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_no_longer_needed_for_original_purpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Erase_when_consent_was_withdrawn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Erase_when_consent_was_withdrawn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_erasure_(Article_17)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Erase_when_data_is_no_longer_needed_for_original_purpose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Erase_when_data_is_no_longer_needed_for_original_purpose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Erase_when_data_is_no_longer_needed_for_original_purpose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_erasure_(Article_17)"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Existence_of_Rights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Existence_of_Rights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#If_and_where_Controller_is_processing_data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#If_and_where_Controller_is_processing_data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Information_about_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Information_about_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Information_about_Third_Parties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Information_about_Third_Parties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_basic_Information_about_processing_(Article_13,_14)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#No_charges_levied -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#No_charges_levied">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Object_to_direct_marketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Object_to_direct_marketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_object_(Article_21)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Object_to_processing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Object_to_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Object_to_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_object_(Article_21)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_Minimization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Integrity_and_Confidentiality"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Processing_is_unlawful -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Processing_is_unlawful">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Provide_copy_of_Personal_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Provide_copy_of_Personal_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_commonly_used_format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_commonly_used_format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_machine_readable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_machine_readable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_structured -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_structured">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_support_reuse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_support_reuse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Source_of_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Source_of_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#When_accuracy_is_contested -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#When_accuracy_is_contested">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#concise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#concise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#easily_accessible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#easily_accessible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#intelligible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#intelligible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#transparent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#transparent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_basic_Information_about_processing_(Article_13,_14) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_basic_Information_about_processing_(Article_13,_14)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_erasure_(Article_17) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_erasure_(Article_17)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_object_(Article_21) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_object_(Article_21)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_rectification_(Article_16) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_rectification_(Article_16)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights_over_automated_decisions_(Article_22) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights_over_automated_decisions_(Article_22)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDerivedLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#HasDirectLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Achievement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Achievement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Face -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Face">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Hedonism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Hedonism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Humility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Humility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Stimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Stimulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Tradition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Tradition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–caring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–caring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–dependability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–dependability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–interpersonal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–interpersonal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–rules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–rules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–dominance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–dominance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–personal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–personal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_Minimization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Integrity_and_Confidentiality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–societal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–societal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ImplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–thought -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–thought">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–concern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–concern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ExplicitLink"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/Values-Map-Ontology#ValuestoPrinciple"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–nature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–nature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–tolerance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–tolerance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Human_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Accuracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_Minimization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_Minimization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Fairness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Integrity_and_Confidentiality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Integrity_and_Confidentiality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Lawfulness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Purpose_Limitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Limitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Transparency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Principle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Automated_processing_with_significant_effects_on_data_subject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_data_being_processed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Categories_of_recipients_data_is_shared_with"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Existence_of_Rights"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#If_and_where_Controller_is_processing_data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Information_about_Processing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#No_charges_levied"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Source_of_Data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Storage_Period"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Data_no_longer_needed_for_original_purpose"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Processing_is_unlawful"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#When_accuracy_is_contested"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Provide_copy_of_Personal_Data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_commonly_used_format"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_machine_readable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_be_structured"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Should_support_reuse"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#concise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#easily_accessible"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#intelligible"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#transparent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_of_access_(Article_15)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_basic_Information_about_processing_(Article_13,_14)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_data_portability_(Article_20)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_erasure_(Article_17)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_object_(Article_21)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_rectification_(Article_16)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_restrict_processing_(Article_18)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Right_to_transparency_(Article_12)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/10/GDPR-Ontology#Rights_over_automated_decisions_(Article_22)"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Achievement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Face"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Hedonism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Humility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Stimulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Tradition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–caring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Benevolence–dependability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–interpersonal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Conformity–rules"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–dominance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Power–resources"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–personal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Security–societal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Self-direction–thought"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–concern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–nature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/longchass/ontologies/2020/9/Human-Values-Ontology#Universalism–tolerance"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
